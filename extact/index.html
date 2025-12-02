@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMATYA - Wisdom in Strategy, Power in Policy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="#home" class="navbar-brand">AMATYA</a>
+                <div class="navbar-nav">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#political-spectrum" class="nav-link">Political Spectrum</a>
+                    <a href="#policy-framework" class="nav-link">Policy Framework</a>
+                    <a href="#news" class="nav-link">News</a>
+                    <a href="#forum" class="nav-link">Forum</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <div class="auth-container">
+                    <button class="btn btn--outline btn--saffron" id="authBtn">Sign In</button>
+                    <div class="user-profile" id="userProfile" style="display: none;">
+                        <div class="profile-dropdown">
+                            <span class="user-name" id="userName"></span>
+                            <div class="dropdown-menu">
+                                <a href="#" id="signOutBtn">Sign Out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">AMATYA</h1>
+            <p class="hero-tagline">Wisdom in strategy, Power in policy</p>
+            <p class="hero-subtitle">India's premier political consulting and policy advisory firm</p>
+            <div class="hero-actions">
+                <button class="btn btn--primary" onclick="scrollToSection('#services')">Explore Our Work</button>
+                <button class="btn btn--outline btn--light" onclick="scrollToSection('#forum')">Join the Forum</button>
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="hero-pattern"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2>Who We Are</h2>
+                <p class="about-description">
+                    AMATYA is India's leading political consulting and policy advisory firm, bringing together 
+                    decades of experience in strategic communication, electoral campaigns, and policy research. 
+                    Our team of experts provides comprehensive solutions for political leaders, parties, and 
+                    organizations seeking to navigate India's complex democratic landscape.
+                </p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">200+</div>
+                        <div class="stat-label">Campaigns Managed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">28</div>
+                        <div class="stat-label">States Covered</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1M+</div>
+                        <div class="stat-label">Voters Reached</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p class="services-description">Comprehensive political consulting solutions tailored for India's democratic landscape</p>
+            <div class="services-grid" id="servicesGrid"></div>
+        </div>
+    </section>
+
+    <!-- Political Spectrum Section -->
+    <section id="political-spectrum" class="political-spectrum-section">
+        <div class="container">
+            <h2>India's Political Ideological Spectrum</h2>
+            <p class="spectrum-description">
+                Understanding India's political landscape through the lens of ideological positioning, 
+                from socialist principles to cultural nationalism.
+            </p>
+            
+            <div class="spectrum-visual">
+                <div class="spectrum-line">
+                    <div class="spectrum-marker left-wing" data-wing="left-wing">
+                        <div class="marker-dot"></div>
+                        <div class="marker-label">Left Wing</div>
+                    </div>
+                    <div class="spectrum-marker centre-left" data-wing="centre-left">
+                        <div class="marker-dot"></div>
+                        <div class="marker-label">Centre-Left</div>
+                    </div>
+                    <div class="spectrum-marker centre" data-wing="centre">
+                        <div class="marker-dot"></div>
+                        <div class="marker-label">Centre</div>
+                    </div>
+                    <div class="spectrum-marker centre-right" data-wing="centre-right">
+                        <div class="marker-dot"></div>
+                        <div class="marker-label">Centre-Right</div>
+                    </div>
+                    <div class="spectrum-marker right-wing" data-wing="right-wing">
+                        <div class="marker-dot"></div>
+                        <div class="marker-label">Right Wing</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="spectrum-details" id="spectrumDetails"></div>
+            
+            <div class="spectrum-dimensions">
+                <h3>Key Ideological Dimensions</h3>
+                <div class="dimensions-grid">
+                    <div class="dimension-item">
+                        <h4>Equity vs Economic Growth</h4>
+                        <p>Balance between social welfare and market-oriented policies</p>
+                    </div>
+                    <div class="dimension-item">
+                        <h4>Secularism vs Cultural Identity</h4>
+                        <p>Tension between pluralistic values and cultural nationalism</p>
+                    </div>
+                    <div class="dimension-item">
+                        <h4>Centralization vs Federalism</h4>
+                        <p>Distribution of power between center and states</p>
+                    </div>
+                    <div class="dimension-item">
+                        <h4>Traditional vs Modern Values</h4>
+                        <p>Preservation of heritage versus progressive social change</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Policy Framework Section -->
+    <section id="policy-framework" class="policy-framework-section">
+        <div class="container">
+            <h2>India's Policy Priorities Framework</h2>
+            <p class="framework-description">
+                Comprehensive policy framework based on Union Budget 2024-25 priorities, 
+                driving India's development agenda across key sectors.
+            </p>
+            
+            <div class="policy-priorities" id="policyPriorities"></div>
+            
+            <div class="policy-process">
+                <h3>Policy Making Process</h3>
+                <div class="process-timeline">
+                    <div class="process-stage">
+                        <div class="stage-number">1</div>
+                        <h4>Agenda Setting</h4>
+                        <p>Issues identified and prioritized by policymakers</p>
+                        <div class="stage-example">
+                            <small><strong>Example:</strong> Beti Bachao Beti Padhao campaign addressing declining child sex ratio</small>
+                        </div>
+                    </div>
+                    
+                    <div class="process-stage">
+                        <div class="stage-number">2</div>
+                        <h4>Policy Formulation</h4>
+                        <p>Crafting policy alternatives and solutions</p>
+                        <div class="stage-example">
+                            <small><strong>Example:</strong> Designing schemes like MGNREGA for rural employment</small>
+                        </div>
+                    </div>
+                    
+                    <div class="process-stage">
+                        <div class="stage-number">3</div>
+                        <h4>Adoption</h4>
+                        <p>Government approval and legislative passage</p>
+                        <div class="stage-example">
+                            <small><strong>Example:</strong> Parliamentary debate and bill passing process</small>
+                        </div>
+                    </div>
+                    
+                    <div class="process-stage">
+                        <div class="stage-number">4</div>
+                        <h4>Implementation</h4>
+                        <p>Execution by government agencies and departments</p>
+                        <div class="stage-example">
+                            <small><strong>Example:</strong> Field-level implementation by civil servants</small>
+                        </div>
+                    </div>
+                    
+                    <div class="process-stage">
+                        <div class="stage-number">5</div>
+                        <h4>Evaluation</h4>
+                        <p>Assessment of policy effectiveness and outcomes</p>
+                        <div class="stage-example">
+                            <small><strong>Example:</strong> Review of NEP 2020 implementation and results</small>
+                        </div>
+                    </div>
+                    
+                    <div class="process-stage">
+                        <div class="stage-number">6</div>
+                        <h4>Policy Maintenance</h4>
+                        <p>Revision, continuation, or termination of policies</p>
+                        <div class="stage-example">
+                            <small><strong>Example:</strong> Updating policies based on performance and changing needs</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="news-section">
+        <div class="container">
+            <h2>Current Political Landscape</h2>
+            <div class="news-controls">
+                <div class="news-categories">
+                    <button class="category-btn active" data-category="all">All News</button>
+                    <button class="category-btn" data-category="national">National</button>
+                    <button class="category-btn" data-category="international">International</button>
+                    <button class="category-btn" data-category="elections">Elections</button>
+                    <button class="category-btn" data-category="policy">Policy</button>
+                    <button class="category-btn" data-category="governance">Governance</button>
+                </div>
+                <div class="news-search">
+                    <input type="text" class="form-control" id="newsSearch" placeholder="Search news...">
+                    <button class="btn btn--primary" id="searchBtn">🔍</button>
+                </div>
+            </div>
+            
+            <div class="trending-section">
+                <h3>📈 Trending Now</h3>
+                <div class="trending-articles" id="trendingArticles"></div>
+            </div>
+            
+            <div id="newsContainer" class="news-container"></div>
+            <div class="news-loading" id="newsLoading" style="display: none;">
+                <p>Loading more news...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Discussion Forum Section -->
+    <section id="forum" class="forum-section">
+        <div class="container">
+            <h2>Join the Political Discourse</h2>
+            <div class="forum-header">
+                <div class="create-discussion">
+                    <input type="text" class="form-control" id="newDiscussionTitle" placeholder="Start a new discussion...">
+                    <button class="btn btn--primary" id="createDiscussionBtn">Create Discussion</button>
+                </div>
+                <div class="forum-filters">
+                    <button class="filter-btn active" data-sort="latest">Latest</button>
+                    <button class="filter-btn" data-sort="trending">Trending</button>
+                    <button class="filter-btn" data-sort="most-discussed">Most Discussed</button>
+                </div>
+            </div>
+            <div id="discussionContainer" class="discussion-container"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-bg-pattern"></div>
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-header">
+                    <h2>Connect with AMATYA</h2>
+                    <p class="contact-tagline">Ready to transform your political strategy? Partner with India's leading political consulting firm.</p>
+                </div>
+                
+                <div class="contact-content-grid">
+                    <div class="contact-info-section">
+                        <div class="contact-methods">
+                            <div class="contact-method-card">
+                                <div class="contact-method-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-method-content">
+                                    <h4>Email Us</h4>
+                                    <p>hello@amatya.in</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method-card">
+                                <div class="contact-method-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M22 16.92V19.92C22 20.92 21.11 21.92 20 21.92C8.85 21.92 0 13.07 0 2.92C0 1.81 1 0.92 2 0.92H5C6 0.92 7 1.81 7 2.92V5.92L4.5 7.42C6.17 10.85 9.15 13.83 12.58 15.5L14.08 12.92H17.08C18.08 12.92 19.08 13.81 19.08 14.92V16.92H22Z" fill="currentColor"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-method-content">
+                                    <h4>Call Us</h4>
+                                    <p>+91 98765 43210</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method-card">
+                                <div class="contact-method-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M21 10C21 17 12 23 12 23S3 17 3 10C3 5.03 7.03 1 12 1S21 5.03 21 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-method-content">
+                                    <h4>Our Offices</h4>
+                                    <p>New Delhi, Mumbai, Bengaluru</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-section">
+                        <form id="contactForm" class="contact-form-enhanced">
+                            <div class="form-grid">
+                                <div class="form-field">
+                                    <label for="contactName" class="form-label-enhanced">Name</label>
+                                    <input type="text" class="form-input-enhanced" name="name" id="contactName" placeholder="Your Full Name" required>
+                                </div>
+                                <div class="form-field">
+                                    <label for="contactEmail" class="form-label-enhanced">Email</label>
+                                    <input type="email" class="form-input-enhanced" name="email" id="contactEmail" placeholder="your.email@domain.com" required>
+                                </div>
+                            </div>
+                            <div class="form-field">
+                                <label for="contactOrganization" class="form-label-enhanced">Organization</label>
+                                <input type="text" class="form-input-enhanced" name="organization" id="contactOrganization" placeholder="Your Organization/Party">
+                            </div>
+                            <div class="form-field">
+                                <label for="contactPhone" class="form-label-enhanced">Phone</label>
+                                <input type="tel" class="form-input-enhanced" name="phone" id="contactPhone" placeholder="+91 98765 43210">
+                            </div>
+                            <div class="form-field">
+                                <label for="contactMessage" class="form-label-enhanced">Message</label>
+                                <textarea class="form-input-enhanced" name="message" id="contactMessage" placeholder="Tell us about your requirements and how we can help you..." rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn-contact-submit">
+                                <span>Send Message</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                    <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <polygon points="22,2 15,22 11,13 2,9 22,2" fill="currentColor"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>AMATYA</h3>
+                    <p>Wisdom in strategy, Power in policy</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank">🐦</a>
+                        <a href="#" target="_blank">💼</a>
+                        <a href="#" target="_blank">📘</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Electoral Strategy</a></li>
+                        <li><a href="#services">Public Affairs</a></li>
+                        <li><a href="#services">Policy Research</a></li>
+                        <li><a href="#services">Digital Engagement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#political-spectrum">Political Spectrum</a></li>
+                        <li><a href="#policy-framework">Policy Framework</a></li>
+                        <li><a href="#news">Latest News</a></li>
+                        <li><a href="#forum">Forum</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#" target="_blank">Privacy Policy</a></li>
+                        <li><a href="#" target="_blank">Terms of Service</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#" target="_blank">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 AMATYA Political Consulting. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Authentication Modal -->
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Join AMATYA Platform</h3>
+                <button class="modal-close" id="closeAuthModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="emailStep" class="auth-step">
+                    <div class="form-group">
+                        <label for="authEmail" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="authEmail" placeholder="Enter your email" required>
+                        <small class="form-text">We'll send you a secure OTP to verify your identity</small>
+                    </div>
+                    <button class="btn btn--primary btn--full-width" id="sendOtpBtn">Send OTP</button>
+                </div>
+                <div id="otpStep" class="auth-step hidden">
+                    <div class="form-group">
+                        <label for="authOtp" class="form-label">Enter OTP</label>
+                        <input type="text" class="form-control" id="authOtp" placeholder="Enter 6-digit OTP" maxlength="6">
+                        <small class="form-text">Demo OTP: 123456 (or use any 6-digit number)</small>
+                    </div>
+                    <div class="auth-actions">
+                        <button class="btn btn--outline" id="resendOtpBtn">Resend OTP</button>
+                        <button class="btn btn--primary" id="verifyOtpBtn">Verify & Sign In</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- News Discussion Modal -->
+    <div id="newsModal" class="modal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h3 id="newsModalTitle">News Discussion</h3>
+                <button class="modal-close" id="closeNewsModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div id="newsModalContent" class="news-content"></div>
+                <div class="discussion-section">
+                    <h4>💬 Discussion</h4>
+                    <div class="comment-form">
+                        <textarea class="form-control" id="commentInput" placeholder="Share your thoughts on this news..." rows="3"></textarea>
+                        <div class="comment-actions">
+                            <div class="comment-info">
+                                <small>Press Shift+Enter for new line</small>
+                            </div>
+                            <button class="btn btn--primary" id="addCommentBtn">Post Comment</button>
+                        </div>
+                    </div>
+                    <div id="commentsContainer" class="comments-container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Forum Post Modal -->
+    <div id="forumPostModal" class="modal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h3>Create New Discussion</h3>
+                <button class="modal-close" id="closeForumModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="forumPostForm">
+                    <div class="form-group">
+                        <label for="postTitle" class="form-label">Discussion Title</label>
+                        <input type="text" class="form-control" id="postTitle" placeholder="Enter discussion title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="postContent" class="form-label">Description</label>
+                        <textarea class="form-control" id="postContent" placeholder="Describe your topic for discussion..." rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="postCategory" class="form-label">Category</label>
+                        <select class="form-control" id="postCategory">
+                            <option value="general">General Discussion</option>
+                            <option value="policy">Policy Analysis</option>
+                            <option value="elections">Elections</option>
+                            <option value="governance">Governance</option>
+                            <option value="international">International Relations</option>
+                        </select>
+                    </div>
+                    <div class="form-actions">
+                        <button type="button" class="btn btn--outline" id="cancelPostBtn">Cancel</button>
+                        <button type="submit" class="btn btn--primary">Create Discussion</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay" style="display: none;">
+        <div class="loading-spinner"></div>
+        <p>Loading...</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
